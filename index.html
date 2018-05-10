@@ -1,10 +1,55 @@
 <!Doctype HTML>
 <html lang="en">
 <head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-118955819-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'UA-118955819-1');
+	</script>
 	<meta charset="utf-8"/>
 	<title>Donut Delights</title>
-	<link rel="stylesheet" href="css/site.css" type="text/css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+	<link rel="stylesheet" href="css/normalize.css" type="text/css">
+	<link rel="stylesheet" href="css/index.css" type="text/css">
+	<link rel="stylesheet" href="css/lightbox.css" type="text/css">
 	<meta name="description" content="Donut Delights homepage">
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/jquery.validate.js"></script>
+	<script>
+		$(document).ready( function() {
+			$("#validate-form").validate({
+				rules: {
+					"firstname": {
+						required: true
+					},
+					"lastname": {
+						required: true
+					},
+					"email": {
+						required: true,
+						email: true
+					}
+				},
+				messages: {
+					"firstname": {
+						required: "Please enter your FIRST name."
+					},
+					"lastname": {
+						required: "Please enter your LAST name."
+					},
+					"email": {
+						required: "Please enter your EMAIL address.",
+						email: "Please enter a VALID email address."
+					}
+				}
+			});
+		});
+	</script>
 </head>
 <body>
 	<header>
@@ -21,16 +66,44 @@
 	</nav>
 	<main>
 		<p><b>Donut Delights</b>&#0174; has been serving C-U with the highest quality donuts and coffees since 1971. Nestled in downtown Urbana, Donut Delights has become a haven for "Gotta have it!" breakfast treats. Our donuts are baked fresh twice daily and our coffee is brewed every fifteen minutes. If you have never been to C-U's hidden gem, you are missing out.</p>
+		<div id="container">
+			<div id="column_1">
+				<a href="images/donutDelightsStoreFront.jpg" data-lightbox="Donut Delights" data-title="Donut Delights storefront">
+					<img src="images/thumbnails/donutDelightsStoreFront_tn.jpg" alt="storefront_tn">
+				</a>
+				<a href="images/bakeryFire.jpg" data-lightbox="Donut Delights" data-title="1980s bakery fire">
+					<img src="images/thumbnails/bakeryFire_tn.jpg" alt="fire_tn">
+				</a>
+				<a href="images/donutsInCase.jpg" data-lightbox="Donut Delights" data-title="Display #1">
+					<img src="images/thumbnails/donutsInCase_tn.jpg" alt="display1_tn">
+				</a>
+				<a href="images/donutsInCase2.jpg" data-lightbox="Donut Delights" data-title="Display #2">
+					<img src="images/thumbnails/donutsInCase2_tn.jpg" alt="display2_tn">
+				</a>
+				<a href="images/donuts.jpg" data-lightbox="Donut Delights" data-title="Donuts">
+					<img src="images/thumbnails/donuts_tn.jpg" alt="donuts_tn">
+				</a>
+				<a href="images/interior.jpg" data-lightbox="Donut Delights" data-title="Donut Delights interior">
+					<img src="images/thumbnails/interior_tn.jpg" alt="interior">
+				</a>
+			</div>
+			<div id="column_2">
+				<img src="images/vetsAdSmall.gif" alt="vets">	
+			</div>
+			<div id="column_3">
+				<iframe width="420" height="315" src="https://www.youtube.com/embed/aWMjUQFEGd0"></iframe>
+			</div>
+		</div>
 		<section>
 			<div class="column">
 				<h3>Subscribe to our newsletter for the latest on our seasonal offerings and special events:</h3>
-				<form>
+				<form id="validate-form" action="https://formspree.io/andrew@ahfink.us" method="POST">
 					First name:<br>
 					<input type="text" name="firstname"><br>
 					Last name:<br>
 					<input type="text" name="lastname"><br>
 					Email:<br>
-					<input type="text" name="email"><br>
+					<input type="email" name="email"><br>
 					<input type="submit" value="Submit">
 				</form>
 			</div>
@@ -43,10 +116,11 @@
 			</div>
 		</section>
 		<p><b>Donut fact:</b> Over 10 billion donuts are made in the United States every year.</p>
+		<img class="soc_media" src="images/social_media.png" alt="social media">
 	</main>
 	<footer>
 		<h5>&copy; 2018 Melvin Furballski, All Rights Reserved</h5>
-		<h6>Last updated on <time datetime="2018-05-03">03-May-2018</time></h6>
+		<h6>Last updated on <time datetime="2018-05-08">08-May-2018</time></h6>
 	</footer>
 </body>
 </html>

@@ -1,0 +1,169 @@
+/* styles for the ELEMENTS */
+html {
+	background-color: tan;
+}
+
+body {
+	margin: auto;
+	font-family: arial;
+	font-size: 100%;
+	width: 80%;
+	border: 3px #5c4033 solid;
+	background-color: #a67b5b;
+}
+
+/* styles for the HEADER */
+header {
+	height: 185px;
+	background-image: linear-gradient(#a67b5b, #5c4033);
+}
+
+header img {
+	float: left;
+	margin: 0.1em;
+	padding: 0.1em;
+	position: relative;
+	top: 0px;
+}
+
+header p {
+	font-style: italic;
+	font-size: 200%;
+	text-align: center;
+	margin: auto;
+	position: relative;
+	top: 50px;
+}
+
+/* styles for the NAV */
+nav {
+	border-top: 3px #5c4033 solid;
+	clear: both;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	background-color: #5c4033;
+	overflow: hidden;
+	position: relative;
+}
+
+nav ul li {
+	float: left;
+}
+
+nav ul li a {
+	display: block;
+	width: 10em;
+	text-align: center;
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+	padding: 1em 0;
+	background-color: #5c4033;
+}
+
+nav #current {
+	color: yellow;
+}
+
+/* styles for the MAIN */
+main {
+	clear: both;
+}
+
+main h2 {
+	font-size: 150%;
+	font-weight: bold;
+	margin: 0.2em;
+	padding-top: 0.5em;
+}
+
+main h4 {
+	font-size: 150%;
+	font-weight: bold;
+	margin: 0.2em;
+	padding-top: 0.5em;
+}
+
+main p {
+	clear: both;
+	font-size: 125%;
+	margin: 0.2em;
+	padding-top: 0.5em;
+}
+
+main .column {
+	float: left;
+	width: 20%;
+	padding: 1em;
+}
+
+main iframe {
+	border: none;
+}
+
+main ul li {
+	font-size: 125%;
+}
+
+main img.soc_media {
+        float: right;
+        margin: 0.5em;
+}
+
+address {
+	margin: 0.5em;
+	padding: 0.5em;
+	font-size: 125%;
+}
+
+section {
+	clear: both;
+}
+
+section .column {
+	float: left;
+	width: 47%;
+	padding: 1em;
+}
+
+section h3 {
+	color: black;
+}
+
+#contact {
+	float: left;
+	width: 45%;
+}
+
+aside {
+	width: 45%;
+	float: right;
+	margin: 0.5em;
+	padding: 0.5em;
+}
+
+/* styles for the FOOTER */
+
+footer {
+	clear: both;
+	background-color: #5c4033;
+	color: white;
+	font-size: 150%;
+	text-align: center;
+	border-top: 3px #5c4033 solid;
+	margin: auto;
+}
+
+footer h5 {
+	margin: 0;
+	padding: 0.5em;
+}
+
+footer h6 {
+	margin: 0;
+	padding: 0.5em;
+}
